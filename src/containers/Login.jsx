@@ -3,7 +3,6 @@ import { observer } from 'mobx-react';
 import MainStore from '../stores/MainStore';
 import RaisedButton from 'material-ui/RaisedButton';
 import CircularProgress from 'material-ui/CircularProgress';
-import '../styles/App.styl';
 
 @observer
 class Login extends Component {
