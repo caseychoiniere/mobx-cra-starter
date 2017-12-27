@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import appConfig from '../appConfig';
 import { Container } from 'react-grid-system';
-import Footer from '../components/Footer.jsx';
 import Graph from '../containers/Graph.jsx';
 import Header from '../components/Header';
 import Home from '../containers/Home.jsx';
@@ -39,7 +38,6 @@ export default () => (
                     <PrivateRoute exact path='/' component={Home} />
                 </Switch>
             </Container>
-            {/*{appConfig.apiToken && <Route component={Footer} />}*/}
         </div>
     </Router>
 );

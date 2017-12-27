@@ -34,7 +34,6 @@ class Login extends Component {
         const {loading} = MainStore;
         return (
             <div>
-                <h2> Login </h2>
                 {!loading ? <a href={this.createLoginUrl()} onClick={this.initiateLogin}>
                     <RaisedButton label="Login" primary={true} />
                 </a> : <CircularProgress size={70} thickness={5} />}
