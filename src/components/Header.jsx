@@ -8,6 +8,7 @@ import IconMenu from 'material-ui/IconMenu';
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import DDS_CLIENT_CONFIG from '../DDS_CLIENT_CONFIG'
 
 @observer
 class Header extends Component {
@@ -39,6 +40,8 @@ class Header extends Component {
     initiateLogin = () => MainStore.toggleLoading();
 
     render() {
+        console.log(DDS_CLIENT_CONFIG)
+
         const {appConfig} = MainStore;
         return (
             <AppBar
