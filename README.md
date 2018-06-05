@@ -26,6 +26,9 @@ Read instructions below for using assets from JavaScript and HTML.
 You can, however, create more top-level directories.<br>
 They will not be included in the production build so you can use them for things like documentation.
 
+## .env
+This repo contains a `.env` file that only has variables for turning on items like decorators (used for Mobx) or css modules etc. It is left here to display how it can be used in your app. You should always add `.env` to your `.gitignore` and make sure you don't commit secrets to a public repository.
+
 ## Available Scripts
 
 In the project directory, you can run:
